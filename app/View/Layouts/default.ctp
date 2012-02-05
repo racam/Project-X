@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<?php echo $this->Html->charset('UTF-8'); ?>
 	<title><?php echo $title_for_layout; ?></title>
 	<link rel="stylesheet/less" href="<?php echo $this->Html->url('/css/bootstrap.less'); ?>">
 	<?php echo $this->Html->script('less.js') ?>
@@ -25,7 +25,7 @@
 	</div>
 	<div class="container">
 		<div class="hero-unit">
-			<img src="img/avion.png" alt="" style="float:right;">
+			<?php echo $this->Html->image('avion.png',array('alt' => 'Avion au décollage')); ?>
 			<h1>lorem</h1>
 			<p>Lorem ipsum dolor sit amet</p>
 		</div>
