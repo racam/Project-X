@@ -1,0 +1,20 @@
+---------Air Simu------------
+
+AirSimu est un jeu par navigateur de gestion. Son nom n'est pas fixé est peu être voué à évoluer.
+
+AirSimu est nouveau dans les jeux de gestions d'aéroport, (concurent inexistant). Voici ci-dessous une brève description du gameplay inéherent au jeux :
+
+
+Une fois le joueur inscrit, celui-ci dispose d’un aéroport tout neuf à son compte. Le but principal pour chaque joueur est d’améliorer son aéroport grâce à plusieurs variables, lui permettant entre autre de débloquer du contenu (leveling).
+Chaque joueur dispose d’un compte en banque classique pour acheter/payer les diverses fonctionnalité disponible pour son aéroport. Il dispose aussi d’une réputation qui déterminera le niveau de l’aéroport.
+En résumé l’utilisateur devra tout faire pour bien investir son argent, (equipement, personnel) et ainsi gagner de la réputation qui débloquera le nouveau contenu.
+
+Pour évoluer et donner une dynamique au jeux, chaque utilisateur aura des points d’action environ 1/5min, la limite maximum serra déterminer par le niveau de réputation de l’utilisateur. Le rôle principal des aéroports dans la vraie vie étant de gérer le trafic des avions et des passagers, les points d’actions serviront à gérer tout cela.
+
+Le principal moteur du jeux, qui peut être considéré comme des “objectifs”, s’agit de contrats entre votre aéroport et une compagnie aérienne, club d’aviateur. Ces contrats vous demanderons d’attendre certains objectifs (faire atterir/décharger passager/mettre du carburant/charger passager/décoller 5 gros avions par ex) ; bien sûr ces contrats sont soumis à certaines contraintes (équipements, réputation …). Ces contrats rapporteront de l’argent et de la réputation.
+
+Comme activité connexe, l’utilisateur peu acheter des équipements nécessaire à la réalisation de contrats (Citerne, hangar, piste, tour de contrôle …) ces équipement nécessiteront eux même du personnel, le joueur devra donc en embaucher/licencier selon les besoins.
+Les magasins eux généreront un afflux d’argent ainsi qu’un gain bonus de réputation.
+
+Concernant l’aspect multijoueur du jeu : Certains contrats nécessiteront des escales dans plusieurs aéroports, à vous de trouver un amis qui accepte le contrat (via une demande) et qui peu l’effectuer.
+Un système de parrainage permettra à l’utilisateur de gagner un certain pourcentage % de réputation gagné par son filleul.
