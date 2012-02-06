@@ -1,0 +1,36 @@
+// MENU
+// ------------
+
+.menu {
+  width:990px;
+  margin-left:-25px;
+  margin-bottom:30px;
+  background-color: #222;
+  #gradient > .vertical(#333, #222);
+  .box-shadow(8px 8px 5px rgba(0,0,0,.5));
+  .border-radius(6px);
+  ul {
+    text-align:center;
+    li {
+      display: inline;
+      text-transform:uppercase;
+      padding:10px 0px;
+      border-right:1px solid @black;
+      margin-left:-5px;
+      a {
+        .transition(all .15s linear);
+        display: inline-block;
+        padding:10px 10px;
+        &:hover {
+          background-color: #333;
+          background-color: rgba(255,255,255,.05);
+          color: @red;
+          text-decoration: none;
+        }
+      }
+      &:first-of-type{
+      border-left:1px solid @black;
+      }
+    }
+  } 
+}

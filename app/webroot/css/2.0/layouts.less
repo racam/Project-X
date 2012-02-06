@@ -1,0 +1,26 @@
+//
+// Layouts
+// Fixed-width and fluid (with sidebar) layouts
+// --------------------------------------------
+
+
+// Container (centered, fixed-width layouts)
+.container {
+  .container-fixed();
+}
+.container:nth-child(2) {
+  .box-shadow(0px 0px 7px 3px @grayDark);
+  background-color:@blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  .border-radius(13px);
+  border: 1px solid @grayDark;
+  .clearfix();
+}
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+.container-fluid {
+  padding-left: @gridGutterWidth;
+  padding-right: @gridGutterWidth;
+  .clearfix();
+}
