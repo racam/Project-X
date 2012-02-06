@@ -3,23 +3,25 @@
 <head>
 	<?php echo $this->Html->charset('UTF-8'); ?>
 	<title><?php echo $title_for_layout; ?></title>
-	<link rel="stylesheet/less" href="<?php echo $this->Html->url('/css/bootstrap.less'); ?>">
+	<link rel="stylesheet/less" href="<?php echo $this->Html->url('/css/2.0/bootstrap.less'); ?>">
 	<?php echo $this->Html->script('less.js') ?>
 	<?php echo $scripts_for_layout; ?>
 </head>
 <body>
 	
-	<div class="topbar">
-		<div class="fill">
-			<div class="container">
-				<h3><a href="#">AirSimu</a></h3>
-				<ul>
-					<li><a href="#">Mon aéroport</a></li>
-					<li><a href="#">Ressources humaines</a></li>
-					<li><a href="#">Gestion du matériel</a></li>
-					<li><a href="#">Duty Free</a></li>
-					<li><a href="#">Contrats</a></li>
-				</ul>
+	<div class="navbar-fixed-top">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">AirSimu</a>
+					<ul class="nav">
+						<li><a href="#">Mon aéroport</a></li>
+						<li><a href="#">Ressources humaines</a></li>
+						<li><a href="#">Gestion du matériel</a></li>
+						<li><a href="#">Duty Free</a></li>
+						<li><a href="#">Contrats</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -41,18 +43,18 @@
 			</ul>
 		</div>
 			<div class="row">
-				<div class="span16">
-					<div class="weldl">
+				<div class="span12">
+					<div class="welsl">
 						<div class="row">
-							<div class="span10">
+							<div class="span8">
 								<?php echo $content_for_layout; ?>
 							</div>
-							<div class="span6">
-							<ul class="media-grid">
-								<li><a href="#">
-								<img src="http://placehold.it/330x230" alt="">
+							<div class="span4">
+							<ul class="thumbnails">
+								<li><a href="#" class="thumbnail">
+								<img src="http://placehold.it/360x268" alt="">
 								</a></li>
-								<li><a href="#">
+								<li><a href="#" class="thumbnail">
 								<img src="http://placehold.it/330x230" alt="">
 								</a></li>
 							</ul>
