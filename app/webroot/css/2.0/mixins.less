@@ -149,6 +149,9 @@
   .offset(@gridColumnWidth, @gridGutterWidth, @columns) {
     margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
   }
+  .inset(@gridColumnWidth, @gridGutterWidth, @columns) {
+    margin-right: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
+  }
   .gridColumn(@gridGutterWidth) {
     float: left;
     margin-left: @gridGutterWidth;
@@ -157,7 +160,7 @@
   .generate(@gridColumns, @gridColumnWidth, @gridGutterWidth) {
     // Row surrounds the columns
     .row {
-      margin-left: @gridGutterWidth * -1;
+      //margin-left: @gridGutterWidth * -1;
       .clearfix();
     }
     // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7, thanks @dhg)
@@ -190,6 +193,18 @@
     .offset9   { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 9); }
     .offset10  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 10); }
     .offset11  { #gridSystem > .offset(@gridColumnWidth, @gridGutterWidth, 11); }
+    // inset column options
+    .inset1   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 1); }
+    .inset2   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 2); }
+    .inset3   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 3); }
+    .inset4   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 4); }
+    .inset5   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 5); }
+    .inset6   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 6); }
+    .inset7   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 7); }
+    .inset8   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 8); }
+    .inset9   { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 9); }
+    .inset10  { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 10); }
+    .inset11  { #gridSystem > .inset(@gridColumnWidth, @gridGutterWidth, 11); }
   }
 }
 

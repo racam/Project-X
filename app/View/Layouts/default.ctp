@@ -8,7 +8,7 @@
 	<?php echo $scripts_for_layout; ?>
 </head>
 <body>
-	
+	<!--
 	<div class="navbar-fixed-top">
 		<div class="navbar">
 			<div class="navbar-inner">
@@ -25,6 +25,7 @@
 			</div>
 		</div>
 	</div>
+	-->
 	<div class="container">
 		<div class="hero-unit">
 			<?php echo $this->Html->image('avion.png',array('alt' => 'Avion au décollage')); ?>
@@ -33,7 +34,7 @@
 		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="#">Actu</a></li>
+				<li><?php echo $this->Html->link('Actu',array('controller'=>'news', 'action'=>'index')) ?></li>
 				<li><a href="#">Présentation</a></li>
 				<li><a href="#">Forum</a></li>
 				<li><a href="#">FAQ</a></li>
@@ -43,24 +44,8 @@
 			</ul>
 		</div>
 			<div class="row">
-				<div class="span12">
-					<div class="welsl">
-						<div class="row">
-							<div class="span8">
-								<?php echo $content_for_layout; ?>
-							</div>
-							<div class="span4">
-							<ul class="thumbnails">
-								<li><a href="#" class="thumbnail">
-								<img src="http://placehold.it/360x268" alt="">
-								</a></li>
-								<li><a href="#" class="thumbnail">
-								<img src="http://placehold.it/330x230" alt="">
-								</a></li>
-							</ul>
-							</div>
-						</div>
-					</div>
+				<div class="span11 outset1">
+							<?php echo $content_for_layout; ?>
 				</div>					
 			</div>
 		</div>
