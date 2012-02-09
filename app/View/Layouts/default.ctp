@@ -2,7 +2,7 @@
 <html>
 <head>
 	<?php echo $this->Html->charset('UTF-8'); ?>
-	<title><?php echo $title_for_layout; ?></title>
+	<?php echo $this->Html->tag('title',$title_for_layout); ?>
 	<link rel="stylesheet/less" href="<?php echo $this->Html->url('/css/2.0/bootstrap.less'); ?>">
 	<?php echo $this->Html->script('less.js') ?>
 	<?php echo $scripts_for_layout; ?>
@@ -29,8 +29,8 @@
 	<div class="container">
 		<div class="hero-unit">
 			<?php echo $this->Html->image('avion.png',array('alt' => 'Avion au décollage')); ?>
-			<h1>lorem</h1>
-			<p>Lorem ipsum dolor sit amet</p>
+			<?php echo $this->Html->tag('h1','Lorem'); ?>
+			<?php echo $this->Html->para(null,'Lorem ipsum dolor sits amet'); ?>
 		</div>
 		<div class="menu">
 			<ul>
@@ -45,7 +45,7 @@
 		</div>
 			<div class="row">
 				<div class="span11 outset1">
-							<?php echo $content_for_layout; ?>
+					<?php echo $content_for_layout; ?>
 				</div>					
 			</div>
 		</div>

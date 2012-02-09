@@ -8,7 +8,7 @@ class NewsController extends AppController {
 		$this->set('news',$this->News->find('all'));
 	}
 
-	public function view($id = null) {
+	public function view($id = null,$title = null) {
         $this->News->id = $id;
         $this->set('news', $this->News->read());
     }

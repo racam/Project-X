@@ -137,8 +137,13 @@ dd {
 hr {
   margin: @baseLineHeight 0;
   border: 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid @white;
+  border-top: 1px solid rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  &.news{
+    .border-radius();
+    height:3px;
+    #gradient > .striped(@blueDark,45deg);
+  }
 }
 
 // Emphasis
