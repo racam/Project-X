@@ -8,7 +8,6 @@
 	<?php echo $scripts_for_layout; ?>
 </head>
 <body>
-	<!--
 	<div class="navbar-fixed-top">
 		<div class="navbar">
 			<div class="navbar-inner">
@@ -25,7 +24,6 @@
 			</div>
 		</div>
 	</div>
-	-->
 	<div class="container">
 		<div class="hero-unit">
 			<?php echo $this->Html->image('avion.png',array('alt' => 'Avion au décollage')); ?>
@@ -49,5 +47,6 @@
 				</div>					
 			</div>
 		</div>
+		<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

@@ -468,7 +468,8 @@ class PaginatorHelper extends AppHelper {
 			return $this->Html->tag($tag, $this->link($title, $url, array_merge($options, compact('escape'))), compact('class'));
 		} else {
 			unset($options['rel']);
-			return $this->Html->tag($tag, $title, array_merge($options, compact('escape', 'class')));
+			$class='disabled';
+			return $this->Html->tag($tag, '<a href="#">'.$title.'</a>', compact('class'));
 		}
 	}
 
@@ -703,12 +704,11 @@ class PaginatorHelper extends AppHelper {
 				$out .= $this->Html->tag($tag, $this->link($i, array('page' => $i), $options), compact('class'))
 					. $separator;
 			}
-
-			$currentClass = 'current';
+			$currentClass = 'active';
 			if ($class) {
 				$currentClass .= ' ' . $class;
 			}
-			$out .= $this->Html->tag($tag, $params['page'], array('class' => $currentClass));
+			$out .= $this->Html->tag($tag, $this->link($i, array('page' => $i), $options), array('class' => $currentClass));
 			if ($i != $params['pageCount']) {
 				$out .= $separator;
 			}
@@ -739,11 +739,11 @@ class PaginatorHelper extends AppHelper {
 
 			for ($i = 1; $i <= $params['pageCount']; $i++) {
 				if ($i == $params['page']) {
-					$currentClass = 'current';
+					$currentClass = 'active';
 					if ($class) {
 						$currentClass .= ' ' . $class;
 					}
-					$out .= $this->Html->tag($tag, $i, array('class' => $currentClass));
+					$out .= $this->Html->tag($tag, $this->link($i, array('page' => $i), $options), array('class' => $currentClass));
 				} else {
 					$out .= $this->Html->tag($tag, $this->link($i, array('page' => $i), $options), compact('class'));
 				}
